@@ -9,7 +9,6 @@ body
 {
 	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
 	font-size: 100%;
-	-webkit-text-size-adjust: none;
 }
 
 .container
@@ -34,12 +33,6 @@ color scheme than the bright-blue HTML standard.
 
 Best color schemes are likely to vary depending on cover art.
 */
-
-a
-{
-	text-decoration: none;
-	color: #369;
-}
 
 a:visited
 {
@@ -448,3 +441,12 @@ Styles for mobile browsers: change to a one-column layout.
 		width: auto;
 	}
 }
+
+img.coverart,img.rollover
+{
+height:250px;
+width:250px;
+padding:3px;
+border:1px solid #021a40;
+}
+

@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello World!</title>
+<title>Adri Kliger</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("img.rollover").hover( 
+function() { this.src = this.src.replace("_off", "_on"); 
+}, 
+function() { this.src = this.src.replace("_on", "_off"); 
+});
+}); 
+</script>
+
 </head>
-<body>
-<p>This is a work in progress, but thank you for stopping by.</p>
+<body> 
+
+<div class="covers">
+
+<a href="legend-of-the-missing-hat/"><img class="rollover" src="images/legend-of-the-missing-hat_off.png" alt="The Legend of the Missing Hat" /></a>
+
+<a href="and-a-hippo-new-year/"><img class="coverart" src="images/and-a-hippo-new-year.png" alt="And a Hippo New Year" /></a>
+
+<a href="mundane-tale-of-the-morning-after/"><img class="coverart" src="images/mundane-tale-of-the-morning-after.png" alt="The Mundane Tale of the Morning After" /></a>
+
+<br />
+
+<a href="please-pass-the-milk-please/"><img class="coverart" src="images/please-pass-the-milk-please.png" alt="Please Pass the Milk Please" /></a>
+
+<a href="i-found-a-new-friend/"><img class="coverart" src="images/i-found-a-new-friend.png" alt="I Found a New Friend" /></a>
+
+<a href="paper-bag-princess/"><img class="coverart" src="images/paper-bag-princess.png" alt="The Paper Bag Princess" /></a>
+
+</div>
+ 
 </body>
 </html>
