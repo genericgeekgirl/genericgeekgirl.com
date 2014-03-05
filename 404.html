@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Enable responsive view on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>404</title>
+<link rel="stylesheet" type="text/css" href="games/play.css" />
+
+</head>
+
+<body>
+
+<h1>You are in a twisty maze of pages, all different.</h1>
+
+<p>If you go home, <a href="index.html">turn back to page 1</a>.</p>
+<p>If you decide to forge on ahead, <a href="javascript:randomlink()">turn back to page 42</a>.</p>
+<p>If you return to whence you came, <a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">turn to page 69,105</a>.</p>
+
+<script type="text/javascript">
+
+  var randomlinks=new Array()
+  randomlinks[0]="games/and-a-hippo-new-year"
+  randomlinks[1]="games/i-found-a-new-friend"
+  randomlinks[2]="games/legend-of-the-missing-hat"
+  randomlinks[3]="games/mundane-tale-of-the-morning-after"
+  randomlinks[4]="games/please-pass-the-milk-please"
+
+  function randomlink(){
+  window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+  }
+
+</script>
+ 
+</body>
+</html>
