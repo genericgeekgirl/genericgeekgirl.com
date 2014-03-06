@@ -1,9 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    font: 10px/13px 'Lucida Sans',sans-serif;
+    font-family:'Open Sans',sans-serif;
+    font-size:13px;
+    font-weight: 400;
+    font-style: normal;
 }
+
+h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* cover art gallery */
 
 .wrap {
     overflow: hidden;
