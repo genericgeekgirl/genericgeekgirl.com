@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch|Open+Sans);
 
 body {
     margin: 0;
@@ -48,12 +48,25 @@ p {
     width: 100%;
 }
 
+
+.feature {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 30%;
+}
+
 @media only screen and (max-width : 480px) {
     /* Smartphone view: 1 tile */
     .box {
 	width: 100%;
 	padding-bottom: 100%;
     }
+
+    .feature {
+	padding-bottom: 100%;
+    }
+
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
@@ -63,6 +76,7 @@ p {
 	padding-bottom: 50%;
     }
 }
+
 
 /* This is a temporary hack while the only thing on the page is games */
 @media only screen and (min-width: 1291px) {
@@ -90,3 +104,36 @@ p {
 /* 5 tiles */
 /* width: 20%; */
 /* padding-bottom: 20%; */
+
+
+
+
+.rainbow {
+    color: purple;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, purple, purple, blue, green, yellow, orange, red);
+}
+
+h3 {
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Fredericka the Great",cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4 {
+    color:#000;
+    margin-bottom: 35px;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    font-family: "Cabin Sketch",cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
