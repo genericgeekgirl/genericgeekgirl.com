@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
     margin: 0;
@@ -9,6 +9,15 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+h1.title
+{
+    text-align: center;
+}
+
+span.normal {font-style:normal}
+span.italic {font-style:italic}
+span.bold {font-weight:bold}
 
 h1 {
     font-size: 30px;
@@ -105,35 +114,8 @@ p {
 /* width: 20%; */
 /* padding-bottom: 20%; */
 
-
-
-
-.rainbow {
-    color: purple;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, purple, purple, blue, green, yellow, orange, red);
+ul#plain {
+list-style: none;
+padding-left:0;
+line-height:30px;
 }
-
-h3 {
-    font-size: 64px;
-    line-height: 78px;
-    margin-bottom: 25px;
-    text-align: center;
-    font-family: "Fredericka the Great",cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h4 {
-    color:#000;
-    margin-bottom: 35px;
-    font-size: 21px;
-    line-height: 28px;
-    text-align: center;
-    font-family: "Cabin Sketch",cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
