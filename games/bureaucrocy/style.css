@@ -478,13 +478,13 @@ p.indent9
 		width: auto;
 	}
 
-	#subcolumn
+	#subcolumn, #subheader, #subfooter
 	{
 		width: 320px;
 	}
 
 
-	#subheader, #subfooter
+	#header, #footer
 	{
 		display:none;
 	}
