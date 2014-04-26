@@ -484,9 +484,9 @@ p.indent9
 	}
 
 
-.framelabel
+	div#header, div#footer
 	{
-		display:none;
+visibility:hidden;
 	}
 
 
