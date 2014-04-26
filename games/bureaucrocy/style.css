@@ -23,30 +23,21 @@ body
 	color: black;
 }
 
-/* about.html and source.html use relative positioning, due to need for a scrollbar */
+/* play.html and source.html use relative positioning, due to need for a scrollbar */
 /* index.html uses absolute positioning */
 
-/* HEADER */
+/* header */
 
-/* Used in about.html and source.html */
-#pageheader {
+#header, #pageheader {
 	width: 100%;
 	top: 0px;
 	height: 60px; /* header height */
 	margin: 0px;
 }
-
-/* Used in index.html. */
 
 #header {
 	position: absolute;
-	width: 100%;
-	top: 0px;
-	height: 60px; /* header height */
-	margin: 0px;
 }
-
-/* Used in all pages -- defines the width. */
 
 #subheader {
 	position: relative;
@@ -55,28 +46,22 @@ body
 	margin: auto;
 }
 
-/* FOOTER */
+/* footer */
 
-/* Used in about.html and source.html. */
-
-#pagefooter {
+#pagefooter { /* play.html, source.html */
 	width: 100%;
 	height: 0px; /* footer height */
 	margin: 0px;
 	margin-top: 2em;
 }
 
-/* Used in index.html. */
-
-#footer {
+#footer { /* index.html */
 	position: absolute;
 	width: 100%;
 	bottom: 0px;
 	height: 0px; /* footer height */
 	margin: 0px;
 }
-
-/* Used in all pages -- defines the width. */
 
 #subfooter {
 	position: relative;
@@ -95,27 +80,18 @@ body
 	font-weight:bold;
 }
 
-/* COLUMN */
+/* middle */
 
-/* Used in about.html and source.html. */
-
-#pagecolumn {
+#pagecolumn, #column {
 	width: 100%;
 	top: 60px; /* header height */
 	margin: 0px;
 }
-
-/* Used in index.html. */
 
 #column {
 	position: absolute;
-	width: 100%;
-	top: 60px; /* header height */
 	bottom: 0px; /* footer height */
-	margin: 0px;
 }
-
-/* width */
 
 #subcolumn {
 	position: relative;
@@ -489,6 +465,7 @@ p.indent9
 	    display:none;
 	}
 
+	#pagecolumn, #column { top: 0px }
 
 	.framelabel, .play .links
 	{
