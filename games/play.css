@@ -22,6 +22,8 @@ Paragraph features defined here apply without distinction to blurb and
 source paragraphs. 
 */
 
+.smalltitle { font-weight:bold; }
+
 p
 {
 	font-size: 1em;
