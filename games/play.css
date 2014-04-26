@@ -58,12 +58,13 @@ body {
 @media screen and (max-device-width: 480px) {
 
     #banner {
+	display:none;
 	height:1px;
 	border-bottom: 1px solid white;
     }
 
     #colbanner {
-        width: 320px;
+        display:none;
     }
 
     #content {
@@ -71,8 +72,8 @@ body {
     }
 
     #gametitle {
-        text-align: left;
-        padding-left: 10px;
+	display:none;
+	padding-top: 0px;
     }
 
     #inlinks {
