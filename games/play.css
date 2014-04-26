@@ -59,7 +59,8 @@ body {
 
     #banner {
 	display:none;
-	height:0px;
+	height:1px;
+	border-bottom: 1px solid white;
     }
 
     #colbanner {
