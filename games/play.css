@@ -57,14 +57,12 @@ body {
 
 @media screen and (max-device-width: 480px) {
 
-    #banner {
-	display:none;
-	height:1px;
-	border-bottom: 1px solid white;
+     #banner {
+	 width:320px;
     }
 
     #colbanner {
-        display:none;
+        width:320px;
     }
 
     #content {
