@@ -55,27 +55,34 @@ body {
     margin-top: 70px;
 }
 
-@media screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
 
-     #banner {
-	 width:100%;
-	 background: white;
+    #banner {
+	height: 0px;
     }
 
     #colbanner {
-        width:100px;
-    }
-
-    #content {
         width: 320px;
-    }
-
-    #gametitle {
-	display:none;
     }
 
     #inlinks {
         display: none;
+    }
+    
+    #gametitle {
+	display:none;
+    }
+
+    #content {
+	width: 400px;
+    }
+
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    
+    #content {
+	width: 600px;
     }
 }
 
