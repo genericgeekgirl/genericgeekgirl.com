@@ -51,7 +51,7 @@
 }
 
 .BufferWindow {
-  overflow: scroll;   /* vertical scrollbar is mandatory */
+/*  overflow: scroll;   * vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 13px;
@@ -63,8 +63,8 @@
 }
 
 .GridWindow {
-  background: #DCDCDC;
-  color: black;
+  background: black;
+  color: white;
   overflow: hidden;
   font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* necessary! */
   font-size: 12px;
