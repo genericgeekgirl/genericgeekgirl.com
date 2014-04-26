@@ -58,7 +58,6 @@ body {
 @media screen and (max-device-width: 480px) {
 
     #banner {
-	display:none;
 	height:1px;
 	border-bottom: 1px solid white;
     }
