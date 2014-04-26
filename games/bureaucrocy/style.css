@@ -482,8 +482,9 @@ p.indent9
 	}
 
 
-	#header
+	#header, #pageheader
 	{
+	    height: 0px;
 	    visibility:hidden;
 	    display:none;
 	}
