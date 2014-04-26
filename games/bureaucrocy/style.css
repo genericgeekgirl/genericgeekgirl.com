@@ -455,8 +455,6 @@ p.indent9
 	top: 0px;
 }
 
-/* one-column layout */
-
 @media screen and (max-device-width: 480px)
 {
 	.coverimage, .introduction, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
@@ -484,9 +482,10 @@ p.indent9
 	}
 
 
-	div#header, div#footer
+	#header
 	{
-visibility:hidden;
+	    visibility:hidden;
+	    display:none;
 	}
 
 
