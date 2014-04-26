@@ -15,7 +15,7 @@ https://github.com/curiousdannii/parchment
 body{margin:0 0 8px}
 }
 
-html{overflow-y:scroll;-webkit-text-size-adjust:none}
+html{-webkit-text-size-adjust:none}
 body{background:#FFF;color:#000;font-family:Georgia,Palatino,serif;font-size:16px;margin:60px 0 8px;text-align:center}
 #parchment{margin:0 auto;text-align:left}
 #gameport{line-height:1.4;margin:0 auto;text-align:left;width:80%}
