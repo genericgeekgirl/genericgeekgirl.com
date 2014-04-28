@@ -8,8 +8,16 @@
     padding-bottom: 40px;
 }
 
+h3 {
+padding-top:20px;
+}
+
 .row {					
     padding: 20px 20px;
+}
+
+span.bold {
+font-weight:bold;
 }
 
 .pageheader h1 {
