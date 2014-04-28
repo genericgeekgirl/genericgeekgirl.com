@@ -38,9 +38,9 @@ p {
 .box {
     float: left;
     position: relative;
-    /* 3 tiles */
-    width: 33.3%;
-    padding-bottom: 33.3%;
+    /* four tiles */
+    width: 25%;
+    padding-bottom: 25%;
 }
 
 .boxInner {
@@ -84,15 +84,20 @@ p {
     }
 }
 
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* three tiles */
+   .box {
+       width: 33.3%;
+       padding-bottom: 33.3%;
+   }
+}
+
+/* add some extra padding on a full-sized screen */
 @media only screen and (min-width: 1291px) {
     #portfolio {
 	padding:20px;
     }
 }
-
-/* three tiles: .box { width: 33.3%; padding-bottom: 33.3%; } */
-/* four tiles: .box { width: 25%; padding-bottom: 25%; } */
-/* five tiles: .box { width: 20%; padding-bottom: 20%; } */
 
 ul#plain {
 list-style: none;
