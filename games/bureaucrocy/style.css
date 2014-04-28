@@ -3,18 +3,49 @@
  * The original can be found at: http://eblong.com/zarf/glulx/quixe/
 **/
 
+/* copied from play.css */
+
+#banner {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background: white;
+    border-bottom: 10px solid white;
+}
+
+#colbanner {
+  position: relative;
+  height: 100%;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gametitle a { text-decoration:none }
+
+#gametitle {
+  color: #006;
+  font-size: 16pt;
+  padding-top: 16px;
+  text-align:center;
+}
+
+/*-----*/
+
 ul {
-list-style-type:none;
-padding:0;
-margin:0;
+    list-style-type:none;
+    padding:0;
+    margin:0;
 }
 
 ul li a {
-font-weight:bold;
+    font-weight:bold;
 }
 
 ul li {
-padding-bottom:10px;
+    padding-bottom:10px;
 }
 
 
@@ -432,8 +463,21 @@ p.indent9
 	top: 0px;
 }
 
-@media screen and (max-device-width: 480px)
+@media only screen and (max-width: 480px)
 {
+
+    #gametitle {
+        display:none;
+    }
+
+    #banner {
+        height: 0px;
+    }
+
+    #colbanner {
+        width: 320px;
+    }
+
 	.coverimage, .introduction, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
 	{
 		float: none;
