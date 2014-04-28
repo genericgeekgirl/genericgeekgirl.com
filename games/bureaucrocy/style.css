@@ -9,6 +9,15 @@ padding:0;
 margin:0;
 }
 
+ul li a {
+font-weight:bold;
+}
+
+ul li {
+padding-bottom:10px;
+}
+
+
 body
 {
 	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
@@ -73,9 +82,9 @@ body
 /* header and footer text */
 
 .framelabel {
-	padding-top: 1em;
+	padding-top: 0.5em;
 	text-align:center;
-	font-size: 25px;
+	font-size: 23px;
 }
 
 /* middle */
@@ -114,19 +123,13 @@ p
 a
 {
 	text-decoration: none;
-	color: #369;
+	color: blue;
 }
 
 a:visited
 {
 	text-decoration: none;
-	color: #006;
-}
-
-a:hover
-{
-	text-decoration: none;
-	color: #33C;
+	color: purple;
 }
 
 .coverimage

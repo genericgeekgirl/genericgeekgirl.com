@@ -3,38 +3,52 @@
 
 <head>
   <title>The Mundane Tale of the Morning After by Adri</title>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <meta name="author" content="Adri" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="author" content="Adri">
   <meta name="description" content="The Mundane Tale of the Morning After by Adri" />
-  <link rel="stylesheet" href="../play.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="../play.css">
+  
+  <script src="../parchment/jquery.min.js"></script>
+<script src="../parchment/parchment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../parchment/parchment.min.css">
+<script>
+parchment_options = {
+default_story: [ "The Mundane Tale of the Morning.zblorb.js" ],
+lib_path: '../parchment/',
+lock_options: 1,
+lock_story: 1,
+page_title: 0
+};
+</script>
+  
 </head>
 
-<body>
+<body class="play">
 
 <div id="banner"><div id="colbanner">
 <div id="gametitle"><a href="index.html">The Mundane Tale of the Morning After</a></div>
 </div></div>
 
-<div id="content">
-
-<p class="centerblock"><a href="Cover.png"><img alt="cover art" src="Small Cover.png" /></a></p>
-
-<p>
-<em>A tiny story about a tiny ninja and a not-so-tiny headache.</em>
-</p>
-
-<hr>
-
-<p>Oof. Your head. You remember very little about last night, but apparently you had an extremely good time at the party.</p>
-
-<hr>
-
-<ul>
-<li><a href="The Mundane Tale of the Morning.zblorb">Download</a></li>
-<li><a href="index.html">Play online</a></li>
-</ul>
-
+<div id="about">
+  <div id="loading-screen">
+    Please wait while the game loads.
+    <noscript><p class="error">This game requires Javascript. Please enable it in your browser.</p></noscript>
+  </div>
 </div>
+
+<div id="parchment"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47073187-1', 'genericgeekgirl.com');
+  ga('send', 'pageview');
+</script>
+
 
 </body>
 </html>
