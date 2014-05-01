@@ -36,27 +36,19 @@
     <div id="page">
 
       <div id="tools_wrapper">
-        <div id="info_panel" class="tools left">
-
-          <h1>Shufflecomp</h1>
-          <p>Blah blah blah</p>
-
-          <div class='buttons'>
-            <button id="save">Save</button><button id="erase">Erase</button>
-          </div>
-        </div>
-
+	
         <div id="character_panel" class="tools right">
-          <h1>Character</h1>
           <div id="character">
             <div id="character_text">
               <div id="character_text_content"></div>
             </div>
-            <div id="qualities"></div>
+            <div class='buttons'>
+              <button id="save">Save</button><button id="erase">Erase</button>
+            </div>
           </div>
         </div>
       </div>
-
+      
       <div id="mid_panel">
         <div id="title">
           <div class="label">
@@ -105,107 +97,154 @@
       </div>
 
       <hr id="turn_separator">
+
     </div>
 
-
-
-    <!-- You don't need to have this block here, but it is defined in
-         the CSS file as hidden, so it is a good spot to hide content
-         you want to load from your game code. See the
-         tutorial.game.js file for details of how this is used. -->
     <div id="content_library">
-      <div id="s_situations">
-        <h1>Situations</h1>
-        <p>
-          In Undum, all interaction takes place in a situation. You
-          can think of it either as a 'Room' in traditional
-          interactive fiction (although it is less flexible than
-          that), or as a 'Page' in a Choose Your Own Adventure book
-          (though it is more flexible than that).
-        </p>
-        <p>
-          At any point, the character is in exactly one situation, and
-          that situation is responsible for everything that happens to
-          them. Situations are chunks of code that generate the output
-          you are reading here. For example, this text was generated
-          by the <em>enter</em> method of the 'situations' situation.
-        </p>
-        <p class='transient'>
-          Let's <a href='todo'>move on again</a>.
-        </p>
+      
+      <div class="situation" id="enterwoods">
+	<p>You enter the woods. There is a white horse here with black fetlocks on the front legs, and a rose tree. You reach up to <a href='pickrose'>pick a rose</a>.</p>
+      </div>
+      
+      <div class="situation" id="pickrose">
+	<p>You have barely plucked a single rose when a handsome young man shows up. He is about a foot taller than you and impossibly slender.</p>
+	<p>"Lady, let it alone!", he exclaims. "How dare you pluck my rose, Madam? How dare you break my tree? How dare you come to my forest without my permission?"</p>
+	<p>
+          <ul class='options'>
+	    <li><a href='argue'>This is MY forest.</a></li>                                                                               <li><a href='apologize'>I'm so sorry!</a></li>
+	</ul></p>
+      </div>   
+      
+      <div class="situation" id="turnback">
+	<p>You chicken out at the last minute and decide to go home.</p>
+	<h1>The end.</h1>
       </div>
 
-      <div id="s_saving">
-        <h1>Saving and Loading</h1>
-        <p>The only piece of the UI we haven't talked about is the
-          'Save' and 'Erase' buttons on the left panel. These are only
-          visible if your browser supports client-side data
-          storage. Clicking 'Save' stores your game, so you can pick
-          it up again later. There is currently no 'Load' button, the
-          game loads when the page loads. There is also no way to save
-          multiple games, and select which one you want to play. These
-          are both things I'd like to change in the future.
-        </p>
-        <p>
-          Potentially your game could generate huge amounts of
-          text. And that would be difficult to store client side
-          (there are unpredictable limits), especially when we move
-          towards having multiple save files. So instead Undum saves
-          your character as the list of links you clicked. Loading a
-          save-file consists of playing through your game again,
-          quickly. This is a beneficial approach for debugging too. It
-          means when you're polishing and correcting typos, you can
-          save and load the game and scroll through the transcript to
-          see your corrections. If we saved the text, your save file
-          would have the error in it and you'd have to manually replay
-          the game to see the correction.
-        </p>
-        <p class='transient'>
-          Let's return to the <a href='hub'>topic list</a>.
-        </p>
+      <div class="situation" id="argue">
+	<p>"This forest is mine. My father gave it to me. I will pluck all the flowers I wish, and I will come and go without anyone's permission."</p>
+	<p>The young man grabs you, pulls you into an embrace and kisses you deeply. You're surprised, but you allow it.</p>
+	<p>When you wake up, he is gone and the wood has grown dark. You take your rose and <a href="venturehome">venture home</a>.</p>
       </div>
 
-      <!-- Some situations defined entirely in the HTML -->
-      <div id="hub" class="situation" data-choices="#topic"
-           data-option-text="View Topic List">
-        <h1 class="transient">Topics</h1>
-        <p class="transient">Choose a topic to find out about next. If
-          in doubt, go through the topics in order.</p>
+      <div class="situation" id="apologize">
+	<p>You stammer an apology. The young man smiles broadly. "Madam, in exchange for a kiss, I would allow you to take all the roses you wish." You blush, but allow him to kiss you.</p>
+	<p>When you wake up, he is gone and the wood has grown dark. You take your rose and <a href="venturehome">venture home</a>.</p>
+      </div>
+      
+      <div class="situation" id="venturehome">
+	<h1>Three months later...</h1>
+	<p>Return home. Three months pass. You're miserable, and in your room. You look terrible. You haven't combed your hair. You haven't wanted to venture out, because you've been throwing up each morning and are beginning to put on weight. And worst, you haven't had your period in three months. Serving maid exclaims that you are obviously pregnant. She asks about the father. You are evasive, but tell her that it's not one of your father's knights. Sensing your anxiety, she suggests a bitter herb that you can find in the woods that will terminate the pregnancy. You leap out of bed and <a href='returntowoods'>return to the woods</a>.</p>
       </div>
 
-      <div id="implicit" class="situation" data-tags="topic"
-           data-heading="Implicit Choices" data-display-order="7"
-           data-choices="#example">
-        <p>When you're writing an Undum game, you often need certain
-          options to be available only when certain conditions hold. You
-          might have an option to remove a secret panel in a haunted
-          house, but that should only be visible if the character knows
-          where it is. If options are available in lots of situations, it
-          can be very difficult to keep track of what options are
-          allowed, and to produce just the right list of choices.</p>
-        <p>To help with this, Undum can generate a list of situation
-          links for you. It does this in three steps. Firstly, each
-          situation can be given one or more tags, this allows you to
-          easily ask for links to all situations with the 'in-hallway'
-          tag, for example. Secondly, situations can have
-          a <em>canView</em> method, which gets to decide whether that
-          situation should appear. That method can look at the
-          current state of the character to decide whether to appear
-          or not. Thirdly, <em>SimpleSituation<em>s have a <em>choices</em>
-          option. If it is set to one or more tags, it handles the building
-          of the choice list.</p>
-        <p>You've seen this already in the topic list. The topic list
-          is generated automatically. All of the situations in the topic
-          list are always available, however.
-          <span class="transient">So here is an example of
-          automatic options that may change:</span></p>
+      <div class="situation" id="returntowoods">
+	<p>You get dressed, brush your hair and rush back out to the woods. The herb is easy to find, and you <a href="pickherb">pick some</a>.</p>
+      </div>
+      
+<!--
+	  <ul class="options">
+	    <li><a href="pluckrose">Pluck another rose.</a></li>
+            <li><a href="pickherb">Pick the herb.</a></li>
+	</ul></p>
       </div>
 
-      <div id="example-choices" class="situation" data-choices="#example">
-        <p class="transient">You can return to the
-          <a href='hub'>Topic List</a> or choose another option from
-          this example:</p>
+      <div class="situation" id="pluckrose">
+	<p>You pluck another rose. The young man reappears. You ask him a question. He tells you a <a href="tamlinstale">tale</a>.</p>
       </div>
+
+-->
+
+      <div class="situation" id="pickherb">
+	<p>You've barely picked a single leaf when the young man reappears.</p>
+	<p>"My darling," he cries," I plead with you. Please do not take that herb. Please do not harm yourself or my child. Why would you wish to do such a thing?"</p>
+	<p>You respond that if only he would human, you would happily keep the child. But since he cannot marry you, you want it gone.</p>
+	<p>He assures you that he is, in fact, human, and he tells you his <a href="tamlinstale">tale</a>.</p>
+      </div>
+      
+      <div class="situation" id="tamlinstale">
+	<p>I would never lie to you, Margaret. My name in Tamlane. I used to be human. I am the son of an earl. But I went hunting one night, and I became very drowsy and fell off my horse. It was the Queen of the Fairies who caught me, and I have lived with her ever since. I am both her companion, and her prisoner. Oh, don't give me that look. It's actally quite lovely. I know neither sickness nor pain. I will never grow old. I can change shape, become as large or as small as I wish. I have never before desired to be mortal again. But tonight is Samhain, and every seven years, the faeries must offer one of their own to the devil in exchange for their continued safety. As I am so young and handsome, I fear that I would be the one sacrificed tonight. You must save me, my love. Tonight, the fairy court will travel across the land. You must wait for us at midnight at the bridge. You must take hold of me and hold tight to me, no matter what. No matter what, Margaret. Promise me this.</p>
+	<p>He disappears. You <a href='gohome'>go home</a>.</p>
+      </div>
+      
+     <div id="gohome" class="situation" data-choices="#responses">
+	<h1>Midnight on Samhain</h1>
+      </div>
+      
+      <div id="takeherb">
+        <p>You bleed to death.</p>
+	<h1>The End</h1>
+      </div>
+
+      <div id="savetamlin">
+	<p>You go to save Tamlin. You lie in wait near the river. Three horses pass by, a black horse, a brown horse and a white horse.
+	  <ul class="options">
+	    <li><a href="blackhorse">Grab the black horse.</a></li>
+	    <li><a href="brownhorse">Grab the brown horse.</a></li>
+	    <li><a href="whitehorse">Grab the white horse.</a></li>
+	</ul></p>
+      </div>
+      
+      <div class="situation" id="brownhorse">
+	<p>You grab the brown horse.</p>
+	<h1>The End</h1>
+      </div>
+      
+      <div class="situation" id="blackhorse">
+	<p>You grab the black horse.</p>
+	<h1>The End</h1>
+      </div>
+      
+      <div class="situation" id="whitehorse">
+	<p>You grab the white horse. The fairy queen is pissed off, and changes him <a href="snake">into a snake.</a></p>
+      </div>
+
+      <div class="situation" id="letgo">
+	<p>You let go.</p>
+	<h1>The End.</h1>
+      </div>
+
+      <div class="situation" id="snake">
+	<p>Tamlin becomes a snake and tries to bite you.
+	  <ul class="options">
+	    <li><a href="lion">Hold on.</a></li>
+	    <li><a href="letgo">Let go.</a></li>
+	</ul></p>
+      </div>
+
+      <div class="situation" id="lion">
+	<p>Tamlin becomes a dove and tries to fly away.
+	  <ul class="options">
+	    <li><a href="coal">Hold on.</a></li>
+	    <li><a href="letgo">Let go.</a></li>
+	</ul></p>
+      </div>
+
+      <div class="situation" id="coal">
+	<p>Tamlin becomes a burning hot coal.
+	  <ul class="options">
+	    <li><a href="nakedman">Hold on.</a></li>
+	    <li><a href="throwit">Throw it into the river.</a></li>
+	</ul></p>
+      </div>
+
+      <div class="situation" id="nakedman">
+	<p>Tamlin becomes a naked man, shivering in your arms.
+	  <ul class="options">
+	    <li><a href="last">You wrap him up in your cloak.</a></li>
+	</ul></p>
+      </div>
+
+      <div class="situation" id="throwit">
+	<p>Tamlin becomes a naked man, shivering in the river.
+	  <ul class="options">
+	    <li><a href="last">You hold him in your arms again and wrap him up in your cloak.</a></li>
+	</ul></p>
+      </div>
+
+      <div class="situation" id="last">
+	<p>The Queen of Fairies is very angry, but accepts her defeat. She tells Tamlane that she should have ripped out his eyes and replaced them with eyes of wood, and also ripped out his heart and replaced it with a stone.</p>
+	<h1>You've won.</h1>
+      </div>
+
     </div>
 
     <script type="text/javascript" src="media/js/jquery-1.11.0.min.js"></script>
