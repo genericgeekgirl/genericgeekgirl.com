@@ -1445,7 +1445,7 @@
             pendingFirstWrite = false;
             var separator = $("#ui_library #turn_separator").clone();
             separator.removeAttr("id");
-            $("#content").append(separator);
+
         }
     };
     var endOutputTransaction = function() {

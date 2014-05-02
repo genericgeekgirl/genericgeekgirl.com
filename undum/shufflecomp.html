@@ -101,18 +101,24 @@
     </div>
 
     <div id="content_library">
+
+      <div id="start" class="situation">
+	<p>You are standing at the edge of the Carterhaugh Wood. You have <a href='remembertales'>been warned</a> not to venture here, but your father is the earl, and this land belongs to you.</p> 
+      </div>
       
+      <div id="remembertales" class="situation">
+	<p>The legend has it that a fae by the name of Tamlyn lives in the Wood, and he will demand a toll from anyone who wishes to visit. For a maiden as young and beautiful as you, the fee would likely be sexual in nature.</p>
+	<p class='transient'>You can <a href='turnback'>turn back</a> now or <a href='enterwoods'>continue into the woods</a>.</p>
+      </div>
+
       <div class="situation" id="enterwoods">
-	<p>You enter the woods. There is a white horse here with black fetlocks on the front legs, and a rose tree. You reach up to <a href='pickrose'>pick a rose</a>.</p>
+	<p>You enter the woods. There is a white horse here, and a rose tree. You reach up to <a href='pickrose'>pick a rose</a>.</p>
       </div>
       
       <div class="situation" id="pickrose">
 	<p>You have barely plucked a single rose when a handsome young man shows up. He is about a foot taller than you and impossibly slender.</p>
 	<p>"Lady, let it alone!", he exclaims. "How dare you pluck my rose, Madam? How dare you break my tree? How dare you come to my forest without my permission?"</p>
-	<p>
-          <ul class='options'>
-	    <li><a href='argue'>This is MY forest.</a></li>                                                                               <li><a href='apologize'>I'm so sorry!</a></li>
-	</ul></p>
+	<p class='transient'>You can <a href='apologize'>apologize</a> for trespassing or <a href='argue'>inform him</a> that these woods belong to you.</p>
       </div>   
       
       <div class="situation" id="turnback">
@@ -133,68 +139,71 @@
       
       <div class="situation" id="venturehome">
 	<h1>Three months later...</h1>
-	<p>Return home. Three months pass. You're miserable, and in your room. You look terrible. You haven't combed your hair. You haven't wanted to venture out, because you've been throwing up each morning and are beginning to put on weight. And worst, you haven't had your period in three months. Serving maid exclaims that you are obviously pregnant. She asks about the father. You are evasive, but tell her that it's not one of your father's knights. Sensing your anxiety, she suggests a bitter herb that you can find in the woods that will terminate the pregnancy. You leap out of bed and <a href='returntowoods'>return to the woods</a>.</p>
+	<p>Return home. Three months pass. You're miserable, and in your room. You look terrible. You haven't combed your hair. You haven't wanted to venture out, because you've been throwing up each morning and are beginning to put on weight. And worst, you haven't had your period in three months. Serving maid exclaims that you are obviously pregnant. She asks <a href="father">about the father</a>.</p>
+      </div>
+
+      <div class="situation" id="father">
+	<p>You are evasive, but tell her that it's not one of your father's knights. Sensing your anxiety, she suggests a bitter herb that you can find in the woods that will terminate the pregnancy. You leap out of bed and <a href='returntowoods'>return to the woods</a>.</p>
       </div>
 
       <div class="situation" id="returntowoods">
-	<p>You get dressed, brush your hair and rush back out to the woods. The herb is easy to find, and you <a href="pickherb">pick some</a>.</p>
+	<p>You get dressed, brush your hair and rush back out to the woods.</p>
+	<p class="transient">You can <a href="pluckrose">pluck another rose</a> or <a href="pickherb">pick the bitter herb</a>.
       </div>
       
-<!--
-	  <ul class="options">
-	    <li><a href="pluckrose">Pluck another rose.</a></li>
-            <li><a href="pickherb">Pick the herb.</a></li>
-	</ul></p>
-      </div>
-
       <div class="situation" id="pluckrose">
-	<p>You pluck another rose. The young man reappears. You ask him a question. He tells you a <a href="tamlinstale">tale</a>.</p>
+	<p>You pluck another rose. The young man reappears. You ask him a question. He tells you a <a href="tamlanestale1">tale</a>.</p>
       </div>
-
--->
 
       <div class="situation" id="pickherb">
 	<p>You've barely picked a single leaf when the young man reappears.</p>
 	<p>"My darling," he cries," I plead with you. Please do not take that herb. Please do not harm yourself or my child. Why would you wish to do such a thing?"</p>
 	<p>You respond that if only he would human, you would happily keep the child. But since he cannot marry you, you want it gone.</p>
-	<p>He assures you that he is, in fact, human, and he tells you his <a href="tamlinstale">tale</a>.</p>
-      </div>
-      
-      <div class="situation" id="tamlinstale">
-	<p>I would never lie to you, Margaret. My name in Tamlane. I used to be human. I am the son of an earl. But I went hunting one night, and I became very drowsy and fell off my horse. It was the Queen of the Fairies who caught me, and I have lived with her ever since. I am both her companion, and her prisoner. Oh, don't give me that look. It's actally quite lovely. I know neither sickness nor pain. I will never grow old. I can change shape, become as large or as small as I wish. I have never before desired to be mortal again. But tonight is Samhain, and every seven years, the faeries must offer one of their own to the devil in exchange for their continued safety. As I am so young and handsome, I fear that I would be the one sacrificed tonight. You must save me, my love. Tonight, the fairy court will travel across the land. You must wait for us at midnight at the bridge. You must take hold of me and hold tight to me, no matter what. No matter what, Margaret. Promise me this.</p>
-	<p>He disappears. You <a href='gohome'>go home</a>.</p>
-      </div>
-      
-     <div id="gohome" class="situation" data-choices="#responses">
-	<h1>Midnight on Samhain</h1>
-      </div>
-      
-      <div id="takeherb">
-        <p>You bleed to death.</p>
-	<h1>The End</h1>
+	<p>He assures you that he is, in fact, human, and he tells you his <a href="tamlanestale2">tale</a>.</p>
       </div>
 
-      <div id="savetamlin">
-	<p>You go to save Tamlin. You lie in wait near the river. Three horses pass by, a black horse, a brown horse and a white horse.
-	  <ul class="options">
-	    <li><a href="blackhorse">Grab the black horse.</a></li>
-	    <li><a href="brownhorse">Grab the brown horse.</a></li>
-	    <li><a href="whitehorse">Grab the white horse.</a></li>
-	</ul></p>
+      <div id="tamlanestale">
+	<p>I would never lie to you, Margaret. My name in Tamlane. I used to be human. I am the son of an earl. But I went hunting one night, and I became very drowsy and fell off my horse. It was the Queen of the Fairies who caught me, and I have lived with her ever since. I am both her companion, and her prisoner. It's actally quite lovely.</p>
+	<p>Oh, don't give me that look. I know neither sickness nor pain. I will never grow old. I can change shape, become as large or as small as I wish. I have never before desired to be mortal again. But tonight is Samhain, and every seven years, the faeries must offer one of their own to the devil in exchange for their continued safety. As I am so young and handsome, I fear that I would be the one sacrificed tonight. You must save me, my love. Tonight, the fairy court will travel across the land. You must wait for us at midnight at the bridge. You must take hold of me and hold tight to me, no matter what. No matter what, Margaret. Promise me this.</p>
+      </div>
+
+      <div id="tamlanestale1">
+	<p>Tamlane kisses you deeply and then vanishes. You <a href='gohome1'>wander home</a>.</p>
       </div>
       
-      <div class="situation" id="brownhorse">
-	<p>You grab the brown horse.</p>
-	<h1>The End</h1>
+      <div id="tamlanestale2">
+	<p>Tamlane kisses you deeply and then vanishes. You <a href='gohome2'>wander home</a>.</p>
       </div>
       
-      <div class="situation" id="blackhorse">
-	<p>You grab the black horse.</p>
-	<h1>The End</h1>
+      <div id="gohome">
+	<h1>Midnight on Samhain</h1>
+	<p>The clock strikes midnight.</p>
+      </div>
+
+      <div id="gohome1">
+	<p class="transient">It is time to <a href="savetamlane">save your darling Tamlane.</a></p>
       </div>
       
+      <div id="gohome2">
+	<p class="transient">It is time to go <a href="savetamlane">save your Tamlane</a>. Alternatively, you can stay home and <a href="takeherb">take the herb</a> in hopes of inducing a miscarriage.</p>
+      </div>
+      
+      <div id="takeherb" class="situation">
+        <p>You don't believe Tamlane's silly story. You call your serving maid and give her the bitter herb. She brews it into a tea for you. It works as stated. In fact, it works too well. You call for help, but none comes. You are dead before morning.</p>
+	<h1>You bled to death.</h1>
+      </div>
+
+      <div id="savetamlane" class="situation">
+	<p>You rush to the bridge and lie in wait near the river. Three horses pass by, <a href="blackhorse">a black horse</a>, <a href="brownhorse">a brown horse</a> and <a href="whitehorse">a white horse</a>. <span class="transient">You were told to pull one of them down, but which one is Tamlane?</span></p>
+      </div>
+      
+      <div id="wronghorse">
+	<p>You grab the wrong horse. It bucks and you fall to the ground where you are trampled.</p>
+	<h1>You have died.</h1>
+      </div>
+
       <div class="situation" id="whitehorse">
-	<p>You grab the white horse. The fairy queen is pissed off, and changes him <a href="snake">into a snake.</a></p>
+	<p>You grab the white horse. The fairy queen shouts angrily at you, and Tamlane is changed into a <a href="snake">snake.</a></p>
       </div>
 
       <div class="situation" id="letgo">
@@ -203,45 +212,25 @@
       </div>
 
       <div class="situation" id="snake">
-	<p>Tamlin becomes a snake and tries to bite you.
-	  <ul class="options">
-	    <li><a href="lion">Hold on.</a></li>
-	    <li><a href="letgo">Let go.</a></li>
-	</ul></p>
+	<p>The snake tries to bite you. But you <a href="dove">hold on</a>.</p>
       </div>
 
-      <div class="situation" id="lion">
-	<p>Tamlin becomes a dove and tries to fly away.
-	  <ul class="options">
-	    <li><a href="coal">Hold on.</a></li>
-	    <li><a href="letgo">Let go.</a></li>
-	</ul></p>
+      <div class="situation" id="dove">
+	<p>Tamlane becomes a dove and tries to fly away. You <a href="coal">hold on</a> as tightly as possible.</p>
       </div>
 
       <div class="situation" id="coal">
-	<p>Tamlin becomes a burning hot coal.
-	  <ul class="options">
-	    <li><a href="nakedman">Hold on.</a></li>
-	    <li><a href="throwit">Throw it into the river.</a></li>
-	</ul></p>
+	<p>Tamlane becomes a burning hot coal. It burns you, and try as you might, you are just unable to <a href="nakedman">hold on</a> any longer.</p>
       </div>
-
+      
       <div class="situation" id="nakedman">
-	<p>Tamlin becomes a naked man, shivering in your arms.
-	  <ul class="options">
-	    <li><a href="last">You wrap him up in your cloak.</a></li>
-	</ul></p>
-      </div>
-
-      <div class="situation" id="throwit">
-	<p>Tamlin becomes a naked man, shivering in the river.
-	  <ul class="options">
-	    <li><a href="last">You hold him in your arms again and wrap him up in your cloak.</a></li>
-	</ul></p>
+	<p>You throw the hot coal into the river. It has barely made a splash before it transforms into a naked man. He shivers, but grins at you despite the chill. You pull him from the water and wrap him up in your cloak and hold him tightly against your breast.</p>
+	<p>"We've won, Tamlane," you cry. "<a href='last'>We've won!</a>"</p>
       </div>
 
       <div class="situation" id="last">
-	<p>The Queen of Fairies is very angry, but accepts her defeat. She tells Tamlane that she should have ripped out his eyes and replaced them with eyes of wood, and also ripped out his heart and replaced it with a stone.</p>
+	<p>The Queen of Fairies is very angry, but accepts her defeat. "Tamlane," she says, "I knew I should have ripped out your eyes and replaced them with wood. I knew I should have ripped out your heart and replaced it with a stone. You have been stolen from me."</p>
+	<p>You bring your love home with you and introduce him to your father. Your father recognizes him immediately. Tamlane is exactly whom he claimed to be. You are married the next morning.</p>
 	<h1>You've won.</h1>
       </div>
 
