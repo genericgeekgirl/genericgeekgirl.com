@@ -1,6 +1,6 @@
 @import url("http://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css");
 
-@import url(http://fonts.googleapis.com/css?family=Life+Savers:700|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Mystery+Quest|Open+Sans);
 
 body { 
     padding:0px; 
@@ -27,7 +27,7 @@ span.bold {
 }
 
 .pageheader h1 {
-    font-family: "Life Savers",cursive;
+    font-family: "Mystery Quest",cursive;
     font-size: 700%;
     color:#008099;
     font-weight: 400;
