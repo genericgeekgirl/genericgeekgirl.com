@@ -1,10 +1,12 @@
 @import url("http://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css");
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Life+Savers:700|Open+Sans);
 
 body { 
     padding:0px; 
 }
+
+
 
 #resume {
     font-family: 'Open Sans', sans-serif;
@@ -25,14 +27,26 @@ span.bold {
 }
 
 .pageheader h1 {
-    font-size: 400%;
+    font-family: "Life Savers",cursive;
+    font-size: 700%;
+    color:#008099;
+    font-weight: 400;
+}
 
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#990033;
 }
 
 a {
     color: #000;
     text-decoration: none;
 }
+
+a:hover { color: #00991a; }
+
+
 
 h1 {
     font-size: 37px;
@@ -49,3 +63,6 @@ li {
     line-height: 25px;
 }
 
+#resume .fa-phone {color:#008899;}
+#resume .fa-envelope {color:#cc0044;}
+#resume .fa-home {color:#00991a;}
