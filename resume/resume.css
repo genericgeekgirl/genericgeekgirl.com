@@ -33,7 +33,6 @@ span.bold {
     font-weight: 400;
 }
 
-
 h2 {
     font-family: 'Source Sans Pro', sans-serif;
     color:#990033;
@@ -64,5 +63,13 @@ li {
 }
 
 #resume .fa-phone {color:#008899;}
-#resume .fa-envelope {color:#cc0044;}
+#resume .fa-envelope {color:#990033;}
 #resume .fa-home {color:#00991a;}
+
+@media only screen and (max-width: 480px) {
+    .pageheader h1 { font-size: 65px; padding-bottom:40px; }
+}
+
+@media only screen and (max-width : 980px) and (min-width : 481px) {
+    .pageheader h1 { padding-bottom:40px; }
+}
