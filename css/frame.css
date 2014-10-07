@@ -33,6 +33,7 @@
     color: #39454b;
     letter-spacing: 0.5px;
     overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 h1#logo {
