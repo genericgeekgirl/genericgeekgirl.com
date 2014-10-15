@@ -1,34 +1,37 @@
 
+<p>This die has 12 sides. One for every Giant, plus a mystery guest.</p>
+
 <form>
-<input type="button" value="Throw dice!" onClick="throwdice()">
+<input type="button" value="Roll!" onClick="roll()" title="But there are only 11 gia...">
 </form>
 
-<div id="image"><img src="11.png"></div>
+<div id="blurb">&nbsp;</div>
+<div id="image"><img src="images/Lem.png"></div>
+
 
 <script>
 var images=[];
 
-images[0]="0.png";
-images[1]="1.png";
-images[2]="2.png";
-images[3]="3.png";
-images[4]="4.png";
-images[5]="5.png";
-images[6]="6.png";
-images[7]="7.png";
-images[8]="8.png";
-images[9]="9.png";
-images[10]="10.png";
-images[11]="11.png";
+images[0]="Zille";
+images[1]="Ti";
+images[2]="Alph";
+images[3]="Cosma";
+images[4]="Friendly";
+images[5]="Pot";
+images[6]="Humbaba";
+images[7]="Lem";
+images[8]="Grendaline";
+images[9]="Mab";
+images[10]="Spriggan";
+images[11]="a Rook";
  
-function throwdice(){
+function roll(){
 var random = Math.floor( Math.random() * images.length );
-document.getElementById("image").innerHTML = "<img src='" + images[random] + "' alt='image'></img>";
+document.getElementById("image").innerHTML = "<img src='images/" + images[random] + ".png' alt='image'></img>";
+document.getElementById("blurb").innerHTML = "<p>Rolled " + images[random] + "!</p>";
+
+// Rolled a Rook! RUNNNN!!!!!
+
 }
 
 </script>
-
-
-
-
-
