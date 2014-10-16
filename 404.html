@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>404</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <!-- Enable responsive view on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>404</title>
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-
+  <link rel="stylesheet" href="css/font-awesome.css" />
 </head>
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+body {
+font-family: 'Special Elite', cursive;
+}
+
+.list {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.list-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+}
+
+.fa-home {color:#008899;}
+.fa-spinner {color:#990033;}
+.fa-reply {color:#00991a;}
+
+</style>
 
 <body>
 
-<div class="wrap">
+  <h1>You are in a twisty maze of pages, all different.</h1>
+  
+<div class="list">
 
-<h1>You are in a twisty maze of pages, all different.</h1>
+  <span class="list-item"><i class="fa fa-home fa-fw"></i>&nbsp; 
+If you go home, <a href="/index.html">turn back to page 42</a>.</span>
 
-<p>If you go home, <a href="/index.html">turn back to page 1</a>.</p>
-<p>If you decide to forge on ahead, <a href="javascript:randomlink()">turn back to page 42</a>.</p>
-<p>If you return to whence you came, <a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">turn to page 69,105</a>.</p>
+  <span class="list-item"><i class="fa fa-spinner fa-spin fa-fw"></i>&nbsp; 
+If you decide to forge on ahead, <a href="javascript:randomlink()">turn to any page</a>.</span>
+
+  <span class="list-item"><i class="fa fa-reply fa-fw"></i>&nbsp; 
+If you return to whence you came, <a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">turn to page 69,105</a>.</span>
 
 </div>
-
+    
 <script type="text/javascript">
 
   var randomlinks=new Array()
