@@ -37,6 +37,10 @@ p { font-size: 17px; }
 
 /* box elements around each item contain a game element, which contains a blurb element */
 
+/* when you add more games, you might want to change the number of items per row. */
+/* This is affected by .box.width. So for four boxes, it would be 25%, and so on. */
+/* padding-bottom should be equal to width to maintain squares, or adjusted for rectangles */
+
 .box {
     float: left;
     position: relative;
