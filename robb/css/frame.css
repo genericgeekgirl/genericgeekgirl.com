@@ -161,6 +161,7 @@ ul.icons li:first-child {
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+/* this section sets the colors for when you hover over the social icons */
 #footer .icons li:hover a.fa-twitter        { color: #2DAAE4; }
 #footer .icons li:hover a.fa-bitbucket      { color: #205081; }
 #footer .icons li:hover a.fa-gittip         { color: #614C3E; }
