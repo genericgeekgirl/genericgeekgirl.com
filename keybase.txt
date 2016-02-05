@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/genericgeekgirl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://genericgeekgirl.com
+    * I am genericgeekgirl (https://keybase.io/genericgeekgirl) on keybase.
+      * I have a public key with fingerprint 240F 78DD 61AC 895B 57E2  285E 1851 8075 AB52 9AB6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+            "key": {
+	                "eldest_kid": "010165d9b318709014c863035601029f6048483c7b78703441bce0a07f73c911a7700a",
+			            "fingerprint": "240f78dd61ac895b57e2285e18518075ab529ab6",
+				                "host": "keybase.io",
+						            "key_id": "18518075ab529ab6",
+							                "kid": "010165d9b318709014c863035601029f6048483c7b78703441bce0a07f73c911a7700a",
+									            "uid": "8a492e71318334dd1960ccd945a7b219",
+										                "username": "genericgeekgirl"
+												        },
+													        "service": {
+														            "hostname": "genericgeekgirl.com",
+															                "protocol": "http:"
+																	        },
+																		        "type": "web_service_binding",
+																			        "version": 1
+																				    },
+																				        "ctime": 1454689076,
+																					    "expire_in": 157680000,
+																					        "prev": "679b356c002495cd48c5d876887fbbdfc8944ebcbd141bad7d25359d3737d64c",
+																						    "seqno": 4,
+																						        "tag": "signature"
+																							}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBVBGD7aDYXIKCrKbivRi8nM7uzM7iHKTkkRVkSkEtlp57LHzePZ
+0+5qWhoZZdHFh6AbXUjQ6EoRFREF3Y008CWpCErqUFIUQRHRdVbqrcfmZZj5v++b
+7//mvzN8UCQ36z49t+l4J3yQ1XWzvTZSdrELbVCoyxuU6AalWgxsIsmFH8SrHa5E
+FQABxDo3qQYNAkwAETOwBjQdy4pq2hggAxkaI5TIuoYQpEwACxCbaMyE0CIEAEsp
+VGwnlRBe2nNSgZRVEbCJwTmGFjNMnepEqKqhC2jo0ABEt6iumhbFkljl+iFDmqOW
+L4ocV97JQ3zA3j/w/9l37YCcYSFTFQRKNU1DnEMTA8a4iXSLUBWaIdAXXsqqERKd
+ECnhOSwhRHXC8ZJKU6Eii3UOE2G+YUP/BhYxt0YqpT03cJmblICqIEhHQ37QkA4J
+6wSN/5GKUyfFZaiSUCc833FTShRKJAucUBsiHWHDBAQXKqI+7Xgi7oQInWADyBU+
+I+qkJCYyJB0zAFRk6owjg+nckCiD2JRyW/4PQoIyyqEMyeKEq7qmm1wjGuEYMSVs
+bm3KVaJI2rQSUtJ3EikrqPWE0nTrxsrBkazcyNAh2eGwRXJz8v6OIN4y7CcGdw8u
+zSx7/OtybP738kXfu6MFDzpetKz69eVz71Zr+orqLUUnnrTvXNa3b2Zp5gO8OCHX
+N6/G+va89K3+SngzkZzyqf9JT6Zg89QLM04vOXNsTrysPNYbWVw248WltstBULHg
+08jXqlbwIVmxqulxx/ac1sMbx+DuYy0/2/aVisb366pexZ8OW/msOK/7RnNjPV/T
+eqqipGb1ywOjFxbb0zOf9086eyXu7v82bnbPeto6nm3Ovn792pv6Fvdd39uTo/p3
+NzTfO/Wjc/mb0bOaS3asKC3Jn9s9r+V2hz2i8rz/9eOhb3uPPnz0vHFnZ++kWMOu
+xN6Jd/MObBs7+Ut+frmdfwRPK/0N/mxHVw==
+=WEay
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/genericgeekgirl
+
+==================================================================
