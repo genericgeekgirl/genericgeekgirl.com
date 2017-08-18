@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+ 
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +22,18 @@ span.bold {font-weight:bold}
 h1 {
     font-size: 30px;
     text-align: left;
+}
+
+h2 {
+    font-size: 100px;
+    text-align:center;
+}
+
+.rainbow {
+    color:purple;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(top left, purple, blueviolet, blue, green, yellow, orange, red);
 }
 
 p {
@@ -93,34 +105,6 @@ width:100%;
 
 
 }
-
-
-/* This is a temporary hack while the only thing on the page is games */
-@media only screen and (min-width: 1291px) {
-    .wrap {
-	width: 75%;
-    }
-}
-
-/* @media only screen and (max-width : 1050px) and (min-width : 651px) { */
-/*     /\* Small desktop / ipad view: 3 tiles *\/ */
-/*     .box { */
-/* 	width: 33.3%; */
-/* 	padding-bottom: 33.3%; */
-/*     } */
-/* } */
-
-/* @media only screen and (max-width : 1290px) and (min-width : 1051px) { */
-/*     /\* Medium desktop: 4 tiles *\/ */
-/*     .box { */
-/* 	width: 25%; */
-/* 	padding-bottom: 25%; */
-/*     } */
-/* } */
-
-/* 5 tiles */
-/* width: 20%; */
-/* padding-bottom: 20%; */
 
 ul#plain {
 list-style: none;
