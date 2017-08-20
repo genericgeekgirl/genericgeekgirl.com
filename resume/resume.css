@@ -43,9 +43,10 @@ a {
     text-decoration: none;
 }
 
-a:hover { color: #00991a; }
-
-
+a:hover {
+    color: #00991a;
+    text-decoration: none;
+}
 
 h1 {
     font-size: 37px;
