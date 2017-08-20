@@ -12,19 +12,31 @@
     <script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
     <script src="js/responsive-img.min.js" type="text/javascript" defer></script>
     <script src="js/google.js" type="text/javascript" defer></script>
-        
+
+    <script type="text/javascript" defer>
+      $(document).ready(function() {
+      $("img.rollover").hover(
+      function() { this.src = this.src.replace("-left", "-right");
+      },
+      function() { this.src = this.src.replace("-right", "-left");
+      });
+      });
+    </script>
+    
   </head>
   <body>
 
     <div class="container">
     
         <h2><span class="rainbow">genericgeekgirl</span></h2>
-
+        
         <div class="ninjas">
-            <img src="img/blue-ninja.png">
-            <img src="img/green-ninja.png">
-            <img src="img/red-ninja.png">
-            <img src="img/black-ninja.png"></div>
+            <a href="/games/index.html"><img class="rollover" src="images/blue-ninja-left.png"></a>
+            <a href="/about/index.html"><img class="rollover" src="images/green-ninja-left.png"></a>
+            <a href="/resume/index.html"><img class="rollover" src="images/red-ninja-left.png"></a>
+            <a href="mailto:adri@genericgeekgirl.com?subject=Hello"><img class="rollover" src="images/black-ninja-left.png"></a>
+        </div>
+
     </div>
 
     <footer id="footer">
