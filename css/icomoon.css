@@ -25,7 +25,8 @@
 }
 
 .ico-itchio:before {
-	content: "\e601";
+    font-size:85%;
+    content: "\e601";
 }
 .ico-patreon:before {
 	content: "\e600";

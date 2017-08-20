@@ -91,11 +91,7 @@ padding:0;
 }
 
 #nav ul li a:hover {
-    color: purple;
-}
-
-#nav ul li a:active {
-    color: purple;
+    color: black;
 }
 
 /* footer */
@@ -167,6 +163,7 @@ ul.icons li:first-child {
 #footer .icons li:hover a.fa-github         { color: #000000; }
 #footer .icons li:hover a.fa-linkedin       { color: #4875B4; }
 #footer .icons li:hover a.ico-patreon       { color: #FF6600; }
+#footer .icons li:hover a.ico-itchio        { color: #000000; }
 
 #footer .copy {
     position: absolute;
