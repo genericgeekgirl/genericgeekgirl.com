@@ -231,6 +231,27 @@ ul.copy li:first-child {
 	height: 2.5em;
 	line-height: 2.5em;
     }
+
+    #header {
+        padding-bottom:20px;
+        border-bottom: 0.05em solid rgba(0,0,0,0.25);
+        box-shadow: 0 0 0 0 rgba(0,0,0,0.25);
+    }
+
+    
+    #footer {
+        border-top: 0.05em solid rgba(0,0,0,0.25);
+        background: white;
+        color: #39454b;
+    }
+
+    #footer .icons a.fa-twitter        { color: #2DAAE4; }
+    #footer .icons a.fa-bitbucket      { color: #205081; }
+    #footer .icons a.fa-gittip         { color: #614C3E; }
+    #footer .icons a.fa-github         { color: #000000; }
+    #footer .icons a.fa-linkedin       { color: #4875B4; }
+    #footer .icons a.ico-patreon       { color: #FF6600; }
+    #footer .icons a.ico-itchio        { color: #000000; }
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
