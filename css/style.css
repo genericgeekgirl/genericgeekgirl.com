@@ -78,7 +78,7 @@ body {
   flex-direction: column;
 }
 
-.container {
+#main {
   flex: 1 0 auto;
   margin-top:50px;
   margin-bottom:50px;
@@ -86,10 +86,11 @@ body {
   margin-right:300px;
 }
 
-.about {
+#about {
   flex: 1 0 auto;
   margin-left:300px;
   margin-right:300px;
+  margin-top:25px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -108,13 +109,14 @@ body {
         width:30%;
     }
 
-    .container {
+    #main {
         margin-left:50px;
         margin-right:50px;
     }
 
     .mii {
         padding-top:25px;
+        padding-bottom:25px;
         text-align:center;
     }
     
@@ -122,5 +124,9 @@ body {
         width:80%;
     }
 
-    
+    #about {
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:0px;
+    }
 }

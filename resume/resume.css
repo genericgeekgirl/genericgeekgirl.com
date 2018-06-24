@@ -69,6 +69,12 @@ li {
 
 @media only screen and (max-width: 480px) {
     .pageheader h1 { font-size: 65px; padding-bottom:40px; }
+
+    #resume {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media only screen and (max-width : 980px) and (min-width : 481px) {
