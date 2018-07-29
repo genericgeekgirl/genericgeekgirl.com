@@ -7,6 +7,21 @@ body {
     overflow-y: scroll;
 }
 
+ul#nav-icons {
+    font-size:25px;
+    position:fixed;
+    top:25px;
+    left:25px;
+}
+
+ul#nav-icons li a {
+    color: white;
+}
+
+ul#nav-icons li {
+    display: inline-block;
+}
+
 #content_wrapper p {
     text-align: justify;
 }
