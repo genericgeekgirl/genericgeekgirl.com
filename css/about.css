@@ -10,9 +10,21 @@
     text-align:center;
 }
 
+.mii img {
+    width:30%;
+}
+
+span.line {
+    display:inline;
+}
 
 @media only screen and (max-width: 480px) {
 
+    span.line {
+        display:block;
+        padding-top:20px;
+    }
+    
     .mii {
         padding-top:25px;
         padding-bottom:25px;
@@ -26,6 +38,6 @@
     #about {
         margin-left:50px;
         margin-right:50px;
-        margin-top:0px;
+        margin-top:30px;
     }
 }
