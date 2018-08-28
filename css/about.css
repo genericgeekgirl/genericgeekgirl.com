@@ -1,0 +1,31 @@
+#about {
+    flex: 1 0 auto;
+    margin-left:300px;
+    margin-right:300px;
+}
+
+.mii {
+    padding-top:45px;
+    padding-bottom:45px;
+    text-align:center;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .mii {
+        padding-top:25px;
+        padding-bottom:25px;
+        text-align:center;
+    }
+    
+    .mii img {
+        width:80%;
+    }
+
+    #about {
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:0px;
+    }
+}

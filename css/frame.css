@@ -157,13 +157,16 @@ ul.icons li:first-child {
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+.fa.solo span, .fab.solo span { display: none; }
+
 #footer .icons li:hover a.fa-twitter        { color: #2DAAE4; }
+#footer .icons li:hover a.fa-mastodon       { color: #2b90d9; }    
 #footer .icons li:hover a.fa-bitbucket      { color: #205081; }
 #footer .icons li:hover a.fa-gittip         { color: #614C3E; }
 #footer .icons li:hover a.fa-github         { color: #000000; }
 #footer .icons li:hover a.fa-linkedin       { color: #4875B4; }
 #footer .icons li:hover a.ico-patreon       { color: #FF6600; }
-#footer .icons li:hover a.ico-itchio        { color: #000000; }
+#footer .icons li:hover a.ico-itchio        { color: #FA5C5C; }
 
 #footer .copy {
     position: absolute;
@@ -246,12 +249,13 @@ ul.copy li:first-child {
     }
 
     #footer .icons a.fa-twitter        { color: #2DAAE4; }
+    #footer .icons a.fa-mastodon       { color: #2b90d9; }
     #footer .icons a.fa-bitbucket      { color: #205081; }
     #footer .icons a.fa-gittip         { color: #614C3E; }
     #footer .icons a.fa-github         { color: #000000; }
     #footer .icons a.fa-linkedin       { color: #4875B4; }
     #footer .icons a.ico-patreon       { color: #FF6600; }
-    #footer .icons a.ico-itchio        { color: #000000; }
+    #footer .icons a.ico-itchio        { color: #FA5C5C; }
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {

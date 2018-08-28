@@ -1,0 +1,39 @@
+.ninjas img {
+    padding:25px;
+}
+
+.ninjas {
+    padding-top:100px;
+    text-align:center;
+}   
+
+.rainbow {
+    color:purple;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(top left, purple, blueviolet, blue, green, yellow, orange, red);
+}
+
+#main {
+  flex: 1 0 auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:300px;
+  margin-right:300px;
+}
+
+@media only screen and (max-width: 480px) {
+    .ninjas {
+        padding-top:25px;
+    }   
+
+    .ninjas img {
+        padding:10px;
+        width:30%;
+    }
+
+    #main {
+        margin-left:25px;
+        margin-right:25px;
+    }
+}
