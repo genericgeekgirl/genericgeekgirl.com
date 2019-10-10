@@ -71,6 +71,13 @@ li {
 #resume .fa-envelope {color:#990033;}
 #resume .fa-home {color:#00991a;}
 
+
+#resume .do-not-contact {
+    color:#00991a;
+    padding: 50px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 480px) {
     .pageheader h1 { font-size: 65px; padding-bottom:40px; }
 
