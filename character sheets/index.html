@@ -1,0 +1,17 @@
+---
+---
+
+<head>
+  <title>Character Sheets</title>
+</head>
+
+<body>
+  <h1>Character Sheets</h1>
+  <ul>
+    {% for url in site.static_files %}
+{% if url.path contains 'character sheets' %}
+    <li><a href="{{ site.baseurl | escape }}{{ url.path | escape }}">{{ url.path | replace: "/character sheets/", "" | replace: ".pdf", "" }}</a> </li>
+{% endif %}
+    {% endfor %}
+  </ul>
+</body>
