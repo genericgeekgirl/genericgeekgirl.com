@@ -9,9 +9,9 @@ body {
 #resume {
     font-family: 'Open Sans', sans-serif;
     padding-top: 60px;
+    padding-left: 150px;
     padding-bottom: 40px;
-    padding-left: 30px;
-    width: 75%;
+    width: 70%;
 }
 
 h3 {
@@ -26,14 +26,31 @@ span.bold {
     font-weight:bold;
 }
 
-.pageheader h1 {
+.contact-info {
+    float:right;
+}
+
+ul.contact-info li {
+    padding: 5px;
+}
+
+ul.contact-info {
+    list-style-type: none;
+}
+
+.name {
+    float: left;
+    padding-top: 35px;
+}
+
+#rheader h1 {
     font-family: "Mystery Quest",cursive;
     font-size: 700%;
     color:#008099;
     font-weight: 400;
 }
 
-.pageheader h1 a {
+#rheader h1 a {
     color:#008099;
 }
 
@@ -58,28 +75,39 @@ h1 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 25px;
-}
-
-li {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 25px;
 }
 
 #resume .fa-phone {color:#008899;}
 #resume .fa-envelope {color:#990033;}
 #resume .fa-home {color:#00991a;}
+#resume .fa { padding-right: 5px; }
 
+.clear {
+    clear: left;
+}
 
-#resume .do-not-contact {
+.do-not-contact {
     color:#00991a;
-    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
+dd.left {
+    float: left;
+}
+
+dd.right {
+    float: right;
+}
+
 @media only screen and (max-width: 480px) {
-    .pageheader h1 { font-size: 65px; padding-bottom:40px; }
+
+    #rheader h1 {
+        font-size: 65px;
+    }
 
     #resume {
         width: 100%;
@@ -88,11 +116,37 @@ li {
         padding-right: 20px;
     }
 
+    .name {
+        float: none;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .contact-info {
+        float: none;
+    }
+    
+    ul.contact-info {
+        text-align: center;
+    }
+    
+    ul.contact-info li {
+        display: inline-block;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .do-not-contact {
+        display: none;
+    }
+    
     #header.resume {
         height:125px;
     }
-}
-
-@media only screen and (max-width : 980px) and (min-width : 481px) {
-    .pageheader h1 { padding-bottom:40px; }
 }
