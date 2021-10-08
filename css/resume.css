@@ -22,8 +22,16 @@ h3 {
     padding: 20px 20px;
 }
 
+hr {
+    padding-top: 20px;
+}
+
 span.bold {
     font-weight:bold;
+}
+
+span.em {
+    font-style: italic;
 }
 
 .contact-info {
@@ -46,17 +54,23 @@ ul.contact-info {
 #rheader h1 {
     font-family: "Mystery Quest",cursive;
     font-size: 700%;
-    color:#008099;
+    color:#66148C;
     font-weight: 400;
 }
 
 #rheader h1 a {
-    color:#008099;
+    color:#66148C;
 }
 
 h2 {
     font-family: 'Source Sans Pro', sans-serif;
-    color:#990033;
+    color:#00838F;
+}
+
+h4 {
+    color:#CC3399;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 a {
@@ -65,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: #00991a;
+    color: #CC3399 ;
     text-decoration: none;
 }
 
@@ -74,14 +88,17 @@ h1 {
     line-height: 65px;
 }
 
-p {
+dd, dt, p {
     font-size: 18px;
+}
+
+#dev p {
     line-height: 25px;
 }
 
-#resume .fa-phone {color:#008899;}
-#resume .fa-envelope {color:#990033;}
-#resume .fa-home {color:#00991a;}
+#resume .fa-phone {color:#00838F;}
+#resume .fa-envelope {color:#66148C;}
+#resume .fa-home {color:#CC3399;}
 #resume .fa { padding-right: 5px; }
 
 .clear {
@@ -89,17 +106,17 @@ p {
 }
 
 .do-not-contact {
-    color:#00991a;
+    color:#CC3399 ;
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-dd.left {
+dl.left {
     float: left;
 }
 
-dd.right {
+dl.right {
     float: right;
 }
 
@@ -133,7 +150,7 @@ dd.right {
     ul.contact-info li {
         display: inline-block;
     }
-    
+
     ul {
         padding-left: 0;
     }
@@ -145,8 +162,51 @@ dd.right {
     .do-not-contact {
         display: none;
     }
+
+    dl.left, dl.right {
+        float: none;
+    }
     
     #header.resume {
         height:125px;
+    }
+}
+
+@media print {
+    #header.resume,
+    #footer.resume {
+        display: none;
+    }
+    
+    .do-not-contact {
+        display: none;
+    }
+    
+    #resume {
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    h3 {
+        padding-top:5px;
+    }
+    
+    #rheader h1 {
+        font-size: 80px;
+    }
+
+    p, dd, dt {
+        font-size: 12px;
+    }
+    
+    #dev p {
+        line-height: 16px;
+        width: 75%;
+    }
+
+    a {
+        text-decoration: none !important;
     }
 }
