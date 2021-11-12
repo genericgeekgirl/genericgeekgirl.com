@@ -2,8 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
-body { 
-    padding:0px; 
+body {
+    padding:0px;
 }
 
 #resume {
@@ -67,10 +67,18 @@ h2 {
     color:#00838F;
 }
 
+h4.no-break {
+    padding-top: 5px;
+}
+
 h4 {
-    color:#CC3399;
+    color: #66148c;
     padding-top: 15px;
     padding-bottom: 5px;
+}
+
+h4.highlight {
+    color:#CC3399;
 }
 
 a {
@@ -138,15 +146,15 @@ dl.right {
         text-align: center;
         padding-top: 5px;
     }
-    
+
     .contact-info {
         float: none;
     }
-    
+
     ul.contact-info {
         text-align: center;
     }
-    
+
     ul.contact-info li {
         display: inline-block;
     }
@@ -166,7 +174,7 @@ dl.right {
     dl.left, dl.right {
         float: none;
     }
-    
+
     #header.resume {
         height:125px;
     }
@@ -177,11 +185,11 @@ dl.right {
     #footer.resume {
         display: none;
     }
-    
+
     .do-not-contact {
         display: none;
     }
-    
+
     #resume {
         padding-top: 25px;
         padding-left: 25px;
@@ -192,7 +200,7 @@ dl.right {
     h3 {
         padding-top:5px;
     }
-    
+
     #rheader h1 {
         font-size: 80px;
     }
@@ -200,7 +208,7 @@ dl.right {
     p, dd, dt {
         font-size: 12px;
     }
-    
+
     #dev p {
         line-height: 16px;
         width: 75%;
