@@ -9,7 +9,7 @@
     margin-bottom:50px;
     margin-left:100px;
     margin-right:100px;
-}          
+}
 
 /* header */
 
@@ -25,7 +25,7 @@
 #header {
     z-index: 10000;
     left: 0;
-    top: 0;   
+    top: 0;
     background: white;
     box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.25);
     background: white;
@@ -208,18 +208,18 @@ ul.copy li:first-child {
         line-height: 2.5em;
 	overflow:hidden;
     }
-    
+
     #logo, #nav {
 	text-align:center;
 	position:relative;
         left: 0;
         top: 0;
     }
-    
+
     #logo a {
         font-size: 1em;
     }
-    
+
     #footer .copy, #footer .icons {
 	position:relative;
 	text-align:center;
@@ -239,7 +239,7 @@ ul.copy li:first-child {
         line-height: 2.5em;
 	overflow:hidden;
     }
-    
+
     #footer .copy, #footer .icons {
 	position:relative;
 	text-align:center;

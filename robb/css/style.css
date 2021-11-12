@@ -16,9 +16,9 @@ span.normal {font-style:normal}
 span.italic {font-style:italic}
 span.bold {font-weight:bold}
 
-h1 { 
-    font-size: 30px; 
-    text-align: left; 
+h1 {
+    font-size: 30px;
+    text-align: left;
     font-family: 'Press Start 2P', cursive;
     padding-bottom:50px;
 }
@@ -55,7 +55,7 @@ p { font-size: 17px; }
     top: 10px;
     bottom: 10px;
     overflow: hidden;
-    border: 3px solid black; 
+    border: 3px solid black;
 }
 
 .game img { width: 100%; }
@@ -93,7 +93,7 @@ a.title { text-decoration: none; font-weight: bold; color: #772200; }
 	width: 100%;
 	padding-bottom: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
@@ -108,8 +108,8 @@ a.title { text-decoration: none; font-weight: bold; color: #772200; }
     /* tablet - landscape - three tiles */
     .box {
         width: 33.3%;
-        padding-bottom: 33.3%;	
-    }    
+        padding-bottom: 33.3%;
+    }
 }
 
 @media only screen and (min-width: 1291px) {

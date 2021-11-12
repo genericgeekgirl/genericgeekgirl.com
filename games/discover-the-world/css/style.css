@@ -153,13 +153,13 @@ ul.contact li a {
     transition: background-color .2s ease-in-out;
     text-align: center;
 }
-			
+
 ul.contact li a:before {
     color: #f2f5f3;
     font-size: 32px;
     line-height: 48px;
 }
-			
+
 ul.contact li:hover a.fa-pencil	{ background-color: purple }
 ul.contact li:hover a.fa-facebook	{ background-color: #3C5A98; }
 ul.contact li:hover a.fa-twitter	{ background-color: #2DAAE4; }

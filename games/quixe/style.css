@@ -1,5 +1,5 @@
-/** 
- * Cribbed from Andrew Plotkin's "One Column" CSS file. 
+/**
+ * Cribbed from Andrew Plotkin's "One Column" CSS file.
  * The original can be found at: http://eblong.com/zarf/glulx/quixe/
 **/
 
@@ -168,7 +168,7 @@ a:visited
 	margin-top: 3em;
 	margin-right: 1em;
     text-align: center;
-} 
+}
 
 /* invisible one-pixel border around cover art */
 
@@ -183,7 +183,7 @@ a:visited
 /* introduction: title, author name, release number */
 
 .introduction
-{ 
+{
 	padding-top: 2.4em;
 	margin-left: 1em;
 	line-height: 1;
@@ -242,8 +242,8 @@ h2 { font-size: 1em; line-height: .25;}
 
 /* link filetype, i.e. (blorb), (pdf) */
 
-span.filetype { 
-font-size: .75em; 
+span.filetype {
+font-size: .75em;
 display:none;
 }
 
@@ -283,7 +283,7 @@ display:none;
 	margin-left: 1em;
 	text-align: right;
 	float: right;
-} 
+}
 
 /* invisible one-pixel border around cover art */
 
@@ -312,18 +312,18 @@ span.substitution
 	color: #69B;
 	font-variant: small-caps;
 }
-	
+
 span.i6code { color: #666; font-family: monospace; }
 
-span.columnhead { 
-	font-style: italic; 
+span.columnhead {
+	font-style: italic;
 	font-size: 1em;
 }
 
 span.heading
 {
 	font-weight: bold;
-} 
+}
 
 .source td
 {
@@ -333,7 +333,7 @@ span.heading
 	font-size: .75em;
 	text-align: left;
 	vertical-align: top;
-} 
+}
 
 .source li
 {
@@ -362,11 +362,11 @@ span.notecue
 
 .notesheading { font-style: italic; }
 
-p.indent0 
+p.indent0
 {	margin-bottom: 0;
 }
 
-p.indent1 
+p.indent1
 {
 	padding-left: 2.8em;
 	text-indent: -.7em;
@@ -374,14 +374,14 @@ p.indent1
 	margin-top: 0;
 }
 
-p.indent2 
-{	margin-bottom: 0; 
+p.indent2
+{	margin-bottom: 0;
 	padding-left: 5.6em;
 	text-indent: -.7em;
 	margin-top: 0;
 }
 
-p.indent3 
+p.indent3
 {
 	padding-left: 8.4em;
 	text-indent: -.7em;
@@ -390,7 +390,7 @@ p.indent3
 }
 
 p.indent4
-{	margin-bottom: 0; 
+{	margin-bottom: 0;
 	padding-left: 11.2em;
 	text-indent: -.7em;
 	margin-top: 0;
@@ -405,7 +405,7 @@ p.indent5
 }
 
 p.indent6
-{	margin-bottom: 0; 
+{	margin-bottom: 0;
 	padding-left: 16.8em;
 	text-indent: -.7em;
 	margin-top: 0;
@@ -421,7 +421,7 @@ p.indent7
 
 
 p.indent8
-{	margin-bottom: 0; 
+{	margin-bottom: 0;
 	padding-left: 22.4em;
 	text-indent: -.7em;
 	margin-top: 0;
@@ -490,7 +490,7 @@ p.indent9
 	{
 		display: none;
 	}
-	
+
 	#gameport
 	{
 		left: 0px;

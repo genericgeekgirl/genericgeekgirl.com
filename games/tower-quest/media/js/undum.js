@@ -1789,8 +1789,8 @@
             });
             var save = $("#save").click(saveGame);
 
-            var restore = $("#restore").click(function() { 
-		loadGame(JSON.parse(localStorage[getSaveId()])); 
+            var restore = $("#restore").click(function() {
+		loadGame(JSON.parse(localStorage[getSaveId()]));
 	    });
 
             var storedCharacter = localStorage[getSaveId()];

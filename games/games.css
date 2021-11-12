@@ -50,7 +50,7 @@ p {
     top: 10px;
     bottom: 10px;
     overflow: hidden;
-    border: 3px solid black; 
+    border: 3px solid black;
 }
 
 .boxInner .boxTitle {
@@ -94,7 +94,7 @@ body .boxInner:hover .boxTitle {
 	width: 100%;
 	padding-bottom: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
