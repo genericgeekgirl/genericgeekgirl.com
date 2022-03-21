@@ -1,4 +1,21 @@
 ---
+ordered_games:
+  - and-a-hippo-new-year
+  - hippo-on-elm-street
+  - bureaucrocy
+  - mundane-tale-of-the-morning-after
+  - story-of-the-shinoboo
+  - paper-bag-princess
+  - please-pass-the-milk-please.png
+  - i-found-a-new-friend
+  - kiiwii
+  - monster-maker
+  - eggstraordinary-adventure
+  - baking-with-lizzie
+  - a-summers-rose
+  - cragne-manor
+  - surprise
+  - life-with-ocd
 ---
 <!DOCTYPE HTML>
 <html>
@@ -27,7 +44,9 @@
               </div>
           </div>
 
+          {% for g in page.ordered_games %}
           {% for game in site.games_index %}
+          {% if g == game.slug %}
           <div class="box">
 	      <div class="boxInner">
 	          <a href="{{ game.url }}">
@@ -35,6 +54,8 @@
 	          </a>
 	      </div>
           </div>
+          {% endif %}
+          {% endfor %}
           {% endfor %}
 
           <div class="box">
