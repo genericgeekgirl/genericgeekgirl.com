@@ -1,0 +1,38 @@
+collections:
+    games_index:
+        order:
+          - and-a-hippo-new-year.md
+          - hippo-on-elm-street.md
+          - bureaucrocy.md
+          - mundane-tale-of-the-morning-after.md
+          - story-of-the-shinoboo.md
+          - paper-bag-princess.md
+          - please-pass-the-milk-please.png
+          - i-found-a-new-friend.md
+          - kiiwii.md
+          - monster-maker.md
+          - eggstraordinary-adventure.md
+          - baking-with-lizzie.md
+          - a-summers-rose.md
+          - cragne-manor.md
+          - surprise.md
+          - life-with-ocd.md
+        output: true
+        permalink: /games/:name/index.html
+    games_play:
+        output: true
+        permalink: /games/:name/play.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "games_index"
+    values:
+      layout: "games_index"
+      author: "Adri"
+  - scope:
+      path: ""
+      type: "games_play"
+    values:
+      layout: "games_play"
+      author: "Adri"

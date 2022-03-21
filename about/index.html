@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -13,18 +15,7 @@
     </head>
 
     <body>
-
-        <header id="header" class="about">
-            <h1 id="logo"><a href="/">Adri</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/games/index.html">Games</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="/resume/index.html">Resume</a></li>
-                    <li><a href="mailto:adri@genericgeekgirl.com?subject=Hello">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        {% include header.html %}
 
         <div id="about">
 
@@ -38,21 +29,6 @@
 
         </div>
 
-        <footer id="footer" class="about">
-            <ul class="icons">
-                <li><a href="https://twitter.com/genericgeekgirl" class="fab fa-twitter solo">
-                        <span>Twitter</span></a></li>
-                <li><a href="https://gamemaking.social/@genericgeekgirl" class="fab fa-mastodon solo">
-                        <span>Mastodon</span></a></li>
-                <li><a href="https://github.com/genericgeekgirl" class="fab fa-github solo">
-                        <span>GitHub</span></a></li>
-                <li><a href="https://genericgeekgirl.itch.io" class="fa ico-itchio solo">
-                        <span>itch.io</span></a></li>
-            </ul>
-            <ul class="copy">
-	        <li>&copy; Adri "genericgeekgirl" Mills</li>
-            </ul>
-        </footer>
-
+        {% include footer.html %}
     </body>
 </html>
