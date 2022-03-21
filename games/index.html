@@ -18,60 +18,58 @@ ordered_games:
   - surprise
   - life-with-ocd
 ---
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Interactive Fiction</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <title>Interactive Fiction</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/font-awesome.css" />
-    <link rel="stylesheet" href="/css/icomoon.css" />
-    <link rel="stylesheet" href="/css/games.css" />
-    <link rel="stylesheet" href="/css/frame.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/icomoon.css" />
+        <link rel="stylesheet" href="/css/games.css" />
+        <link rel="stylesheet" href="/css/frame.css" />
+    </head>
 
-    <script src="/js/google.js" type="text/javascript" defer></script>
-  </head>
+    <body>
+        {% include header.html %}
 
-  <body>
-      {% include header.html %}
+        <div id="portfolio">
+            <div class="box">
+                <div class="boxInner">
+                    <a href="discover-the-world/">
+                        <img src="images/imagine-a-world.png" alt="Imagine a World" />
+                    </a>
+                </div>
+            </div>
 
-      <div id="portfolio">
-          <div class="box">
-              <div class="boxInner">
-                  <a href="discover-the-world/">
-                      <img src="images/imagine-a-world.png" alt="Imagine a World" />
-                  </a>
-              </div>
-          </div>
+            {% for g in page.ordered_games %}
+            {% for game in site.games_index %}
+            {% if g == game.slug %}
+            <div class="box">
+	        <div class="boxInner">
+	            <a href="{{ game.url }}">
+	                <img src="/games/images/{{ game.cover }}" alt="{{ game.title }}" />
+	            </a>
+	        </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
 
-          {% for g in page.ordered_games %}
-          {% for game in site.games_index %}
-          {% if g == game.slug %}
-          <div class="box">
-	      <div class="boxInner">
-	          <a href="{{ game.url }}">
-	              <img src="/games/images/{{ game.cover }}" alt="{{ game.title }}" />
-	          </a>
-	      </div>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            <div class="box">
+                <div class="boxInner">
+	            <a href="http://genericgeekgirl.itch.io"><img src="images/itchio.png" alt="itch.io" /></a>
+                </div>
+            </div>
 
-          <div class="box">
-              <div class="boxInner">
-	          <a href="http://genericgeekgirl.itch.io"><img src="images/itchio.png" alt="itch.io" /></a>
-              </div>
-          </div>
+            <div class="box">
+                <div class="boxInner">
+	            <a href="https://github.com/genericgeekgirl/Games"><img src="images/github.png" alt="Github" /></a>
+                </div>
+            </div>
+        </div> <!-- #portfolio -->
 
-          <div class="box">
-              <div class="boxInner">
-	          <a href="https://github.com/genericgeekgirl/Games"><img src="images/github.png" alt="Github" /></a>
-              </div>
-          </div>
-      </div> <!-- #portfolio -->
-
-      {% include footer.html %}
-  </body>
+        {% include footer.html %}
+    </body>
 </html>

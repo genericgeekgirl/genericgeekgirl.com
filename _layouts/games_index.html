@@ -2,58 +2,57 @@
 ---
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>{{ page.title }} by {{ page.author }}</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <head>
-    <title>{{ page.title }} by {{ page.author }}</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="{{ page.title }} by {{ page.author }}" />
+        <!-- <meta property="og:url" content="" /> -->
+        <meta property="og:image" content="/games/images/{{ page.cover }}" />
+        <meta property="og:description" content="{{ page.blurb }}" />
+        <meta property="og:site_name" content="genericgeekgirl.com" />
 
-    <meta property="og:title" content="{{ page.title }} by {{ page.author }}" />
-    <!-- <meta property="og:url" content="" /> -->
-    <meta property="og:image" content="/games/images/{{ page.cover }}" />
-    <meta property="og:description" content="{{ page.blurb }}" />
-    <meta property="og:site_name" content="genericgeekgirl.com" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="author" content="{{ page.author }}" />
+        <meta name="description" content="{{ page.title }} by {{ page.author }}" />
 
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="author" content="{{ page.author }}" />
-    <meta name="description" content="{{ page.title }} by {{ page.author }}" />
+        <link rel="stylesheet" href="/css/play.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/css/font-awesome.css" type="text/css" media="all" />
+    </head>
 
-    <link rel="stylesheet" href="/css/play.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="/css/font-awesome.css" type="text/css" media="all" />
-  </head>
+    <body>
+        <!-- fix links -->
+        <ul id="nav-icons">
+	    <li><a href="/"><i class="fa fa-home"></i></a></li>
+            <li>|</li>
+	    <li><a href="/games"><i class="fa fa-gamepad"></i></a></li>
+        </ul>
 
-  <body>
-      <!-- fix links -->
-      <ul id="nav-icons">
-	  <li><a href="/"><i class="fa fa-home"></i></a></li>
-          <li>|</li>
-	  <li><a href="/games"><i class="fa fa-gamepad"></i></a></li>
-      </ul>
+        <div id="banner"><div id="colbanner">
+	        <div id="gametitle"><a href="play.html">{{ page.title }}</a></div>
+        </div></div>
 
-    <div id="banner"><div id="colbanner">
-	<div id="gametitle"><a href="play.html">{{ page.title }}</a></div>
-    </div></div>
+        <div id="content">
 
-    <div id="content">
+            <p class="centerblock"><a href="/games/images/{{ page.cover }}"><img alt="cover art" src="/games/images/{{ page.cover_small }}" /></a></p>
 
-      <p class="centerblock"><a href="/games/images/{{ page.cover }}"><img alt="cover art" src="/games/images/{{ page.cover_small }}" /></a></p>
+            <p>
+	        <em>{{ page.blurb }}</em>
+            </p>
 
-      <p>
-	<em>{{ page.blurb }}</em>
-      </p>
+            <hr />
+            {{ page.content }}
+            <hr />
 
-      <hr />
-      {{ page.content }}
-      <hr />
+            <ul>
+	        <li><i class="fa fa-terminal"></i>&nbsp; <a href="play.html">Play Online</a></li>
+                {% if page.file_download %}
+	        <li><i class="fa fa-download"></i>&nbsp; <a href="/games/files/{{ page.file_download }}">Download</a></li>
+                {% endif %}
+            </ul>
 
-      <ul>
-	  <li><i class="fa fa-terminal"></i>&nbsp; <a href="play.html">Play Online</a></li>
-          {% if page.file_download %}
-	  <li><i class="fa fa-download"></i>&nbsp; <a href="/games/files/{{ page.file_download }}">Download</a></li>
-          {% endif %}
-      </ul>
+        </div>
 
-    </div>
-
-  </body>
+    </body>
 </html>
