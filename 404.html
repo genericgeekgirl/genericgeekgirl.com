@@ -1,70 +1,43 @@
+---
+---
 <!DOCTYPE html>
 <html>
-<head>
-  <title>404</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/font-awesome.css" />
-</head>
-<style>
+    <head>
+        <title>404</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/404.css" />
+    </head>
 
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap')
+    <body>
 
-body {
-font-family: 'Special Elite', cursive;
-}
+        <h1>You are in a twisty maze of pages, all different.</h1>
 
-.list {
-  margin-bottom: 20px;
-  padding-left: 0;
-}
+        <div class="list">
 
-.list-item {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  margin-bottom: -1px;
-}
+            <span class="list-item"><i class="fa fa-home fa-fw"></i>&nbsp;
+                If you go home, <a href="/">turn back to page 42</a>.</span>
 
-.fa-home {color:#008899;}
-.fa-spinner {color:#990033;}
-.fa-reply {color:#00991a;}
+            <span class="list-item"><i class="fa fa-spinner fa-spin fa-fw"></i>&nbsp;
+                If you decide to forge on ahead, <a href="javascript:randomlink()">turn to any page</a>.</span>
 
-</style>
+            <span class="list-item"><i class="fa fa-reply fa-fw"></i>&nbsp;
+                If you return to whence you came, <a href="javascript:history.go(-1)">turn to page 69,105</a>.</span>
 
-<body>
+        </div>
 
-  <h1>You are in a twisty maze of pages, all different.</h1>
-
-<div class="list">
-
-  <span class="list-item"><i class="fa fa-home fa-fw"></i>&nbsp;
-If you go home, <a href="/index.html">turn back to page 42</a>.</span>
-
-  <span class="list-item"><i class="fa fa-spinner fa-spin fa-fw"></i>&nbsp;
-If you decide to forge on ahead, <a href="javascript:randomlink()">turn to any page</a>.</span>
-
-  <span class="list-item"><i class="fa fa-reply fa-fw"></i>&nbsp;
-If you return to whence you came, <a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">turn to page 69,105</a>.</span>
-
-</div>
+    </body>
+</html>
 
 <script type="text/javascript">
+    var possibleLinks = []
 
-  var randomlinks=new Array()
-  randomlinks[0]="/games/and-a-hippo-new-year"
-  randomlinks[1]="/games/i-found-a-new-friend"
-  randomlinks[2]="/games/legend-of-the-missing-hat"
-  randomlinks[3]="/games/mundane-tale-of-the-morning-after"
-  randomlinks[4]="/games/please-pass-the-milk-please"
-  randomlinks[5]="/games/paper-bag-princess"
-  randomlinks[6]="/games/bureaucrocy"
+    {% for game in site.games_index %}
+    possibleLinks.push("{{ game.url }}");
+    {% endfor %}
 
-  function randomlink(){
-  window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
-  }
-
+    function randomlink() {
+        window.location=possibleLinks[Math.floor(Math.random()*possibleLinks.length)];
+    }
 </script>
-
-</body>
-</html>
