@@ -205,10 +205,6 @@ ul.copy li:first-child {
         margin: 0 10px;
     }
 
-    body {
-        display:inline-block;
-    }
-
     #header, #footer {
         height: 5em;
         line-height: 2.5em;
