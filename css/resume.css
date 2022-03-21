@@ -175,14 +175,13 @@ dl.right {
         float: none;
     }
 
-    #header.resume {
-        height:125px;
+    #header {
+        height: 125px;
     }
 }
 
 @media print {
-    #header.resume,
-    #footer.resume {
+    #header, #footer {
         display: none;
     }
 
