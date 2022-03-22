@@ -1,10 +1,22 @@
-.ninjas img {
-    padding:25px;
+#ninjas {
+    padding-top: 100px;
+    text-align: center;
 }
 
-.ninjas {
-    padding-top:100px;
-    text-align:center;
+#ninjas .link {
+    display: inline-block;
+    padding: 25px;
+}
+
+#ninjas .image:hover {
+    transform: rotateY(180deg);
+}
+
+#ninjas .text {
+    font-family: "Cabin Sketch", cursive;
+    color: black;
+    font-size: 50px;
+    text-align: center;
 }
 
 .rainbow {
@@ -16,24 +28,32 @@
 
 #main {
   flex: 1 0 auto;
-  margin-top:50px;
-  margin-bottom:50px;
-  margin-left:300px;
-  margin-right:300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 @media only screen and (max-width: 480px) {
-    .ninjas {
-        padding-top:25px;
+    #ninjas {
+        padding-top: 25px;
     }
 
-    .ninjas img {
-        padding:10px;
-        width:30%;
+    #ninjas .link {
+        padding: 10px;
+    }
+
+    #ninjas img {
+	width: 30%;
+    }
+
+    #ninjas .text {
+        display: none;
+        font-size: 25px;
     }
 
     #main {
-        margin-left:25px;
-        margin-right:25px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
