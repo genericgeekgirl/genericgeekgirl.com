@@ -154,6 +154,10 @@ dl.right{
         display: none;
     }
 
+    .description {
+        display: none;
+    }
+
     .contact-info {
         float: none;
     }
