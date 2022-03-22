@@ -32,8 +32,6 @@
     font-weight: 300;
     color: #39454b;
     letter-spacing: 0.5px;
-    overflow-x:hidden;
-    overflow-y:hidden;
 }
 
 h1#logo {
@@ -208,7 +206,6 @@ ul.copy li:first-child {
     #header, #footer {
         height: 5em;
         line-height: 2.5em;
-	overflow:hidden;
     }
 
     #logo, #nav {
