@@ -37,18 +37,20 @@
 @media only screen and (max-width: 480px) {
     #ninjas {
         padding-top: 25px;
+        width: 100%;
     }
 
     #ninjas .link {
-        padding: 10px;
+        width: 40%;
+        padding: 5px;
+        padding-bottom: 45px;
     }
 
     #ninjas img {
-	width: 30%;
+        width: 80%;
     }
 
     #ninjas .text {
-        display: none;
         font-size: 25px;
     }
 
