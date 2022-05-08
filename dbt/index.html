@@ -1,0 +1,9 @@
+<script type="text/javascript">
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max)+1;
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    document.write('<img src="cards/' + getRandomInt(1, 93) + '.png">')
+</script>
