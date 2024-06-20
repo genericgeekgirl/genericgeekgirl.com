@@ -104,7 +104,7 @@ dd {
     padding-bottom: 9px;
 }
 
-#dev p {
+#jobs p {
     line-height: 25px;
 }
 
@@ -203,6 +203,14 @@ dl.right{
         display: none;
     }
 
+    #game-dev {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+    
     #resume {
         padding-top: 25px;
         padding-left: 25px;
@@ -222,7 +230,7 @@ dl.right{
         font-size: 12px;
     }
 
-    #dev p {
+    #jobs p {
         line-height: 16px;
         width: 75%;
     }
