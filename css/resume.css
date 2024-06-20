@@ -210,6 +210,10 @@ dl.right{
     .hide {
         display: none;
     }
+
+    .bigger {
+        margin-top: 40px;
+    }
     
     #resume {
         padding-top: 25px;
