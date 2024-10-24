@@ -220,6 +220,10 @@ dl.right{
 }
 
 @media print {
+    .pagebreak {
+        break-after: always;
+    }
+    
     #header, #footer {
         display: none;
     }
