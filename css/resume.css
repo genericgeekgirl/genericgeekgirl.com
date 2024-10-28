@@ -146,6 +146,10 @@ dl.right{
     width: 33%;
 }
 
+.skills {
+    padding-top: 15px;
+}
+
 .skills:after {
   content: "";
   display: table;
