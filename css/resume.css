@@ -152,6 +152,10 @@ dl.right{
   clear: both;
 }
 
+.print-heading {
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
 
     #rbody {
@@ -270,5 +274,13 @@ dl.right{
 
     a {
         text-decoration: none !important;
+    }
+
+    .web-heading {
+        display: none;
+    }
+
+    .print-heading {
+        display: inline;
     }
 }
