@@ -208,12 +208,16 @@ dl.right{
     }
     
     #resume {
-        padding-top: 25px;
-        padding-left: 25px;
-        padding-bottom: 25px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
         width: 100%;
     }
 
+    #rbody {
+        padding-top: 5px;
+    }
+    
     body {
         font-size: 10px;
     }
@@ -223,7 +227,7 @@ dl.right{
     }
     
     #rheader h1 {
-        font-size: 80px;
+        font-size: 75px;
     }
 
     h2 {
