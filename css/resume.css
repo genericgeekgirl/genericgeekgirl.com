@@ -122,6 +122,7 @@ dl.middle,
 dl.right{
     float: left;
     width: 33%;
+    margin: 0;
 }
 
 .skills:after {
@@ -210,9 +211,9 @@ dl.right{
     
     #resume {
         padding-top: 15px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        width: 96%;
     }
 
     #rbody {
@@ -233,6 +234,7 @@ dl.right{
 
     h2 {
         font-size: 14px;
+        margin-top: 5px;
     }
 
     h3 {
@@ -254,5 +256,6 @@ dl.right{
 
     .print-heading {
         display: inline;
+        margin-bottom: 18.26px;
     }
 }
