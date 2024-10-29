@@ -138,7 +138,7 @@ dl.right{
     #rbody {
         padding-top: 0;
     }
-    
+
     #rheader h1 {
         font-size: 65px;
     }
@@ -214,8 +214,24 @@ dl.right{
         width: 100%;
     }
 
+    body {
+        font-size: 10px;
+    }
+
+    p, dd, dt {
+        font-size: 10px;
+    }
+    
     #rheader h1 {
         font-size: 80px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
     }
 
     #jobs p {
