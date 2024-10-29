@@ -1,5 +1,3 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
-
 @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -23,21 +21,11 @@ body {
     padding: 20px 20px;
 }
 
-hr {
-    padding-top: 20px;
-}
-
-.pronouns {
-    color:#CC3399;
-    font-size: 200%;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .bold {
     font-weight:bold;
 }
 
-span.em {
+.em {
     font-style: italic;
 }
 
@@ -55,7 +43,6 @@ ul.contact-info {
 
 .name {
     float: left;
-    padding-top: 35px;
 }
 
 #rheader h1 {
@@ -63,28 +50,26 @@ ul.contact-info {
     font-size: 700%;
     color:#66148C;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #rheader h1 a {
     color:#66148C;
 }
 
-h3 {
+h2 {
     font-family: 'Source Sans Pro', sans-serif;
     color:#00838F;
+    font-size: 22px;
 }
 
 .dates {
     color: black;
 }
 
-h5.highlight {
+.highlight {
     color:#CC3399;
-}
-
-h5 .no-break {
-    padding-top: 0px;
-    margin-top: 0px;
 }
 
 a {
@@ -97,41 +82,29 @@ a:hover {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 37px;
-    line-height: 65px;
-}
-
-dd, dt, p {
+h3 {
     font-size: 18px;
+    color: #66148c;
+    margin-top: 0;
+    padding-bottom: 0;
+}    
+
+h3.no-break {
+    padding-top: 0;
 }
 
-p {
-    padding-bottom: 12px;
+p, dd, dt {
+    font-size: 16px;
 }
 
 dt {
     font-weight: bold;
+    padding-bottom: 0;
 }
 
 dd {
+    margin-inline-start: 0;
     padding-bottom: 9px;
-}
-
-#jobs p {
-    line-height: 25px;
-}
-
-.job h5,
-#education h5 {
-    color: #66148c;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
-#education p {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #resume .fa-phone {color:#00838F;}
@@ -143,26 +116,11 @@ dd {
     clear: left;
 }
 
-.do-not-contact {
-    color:#CC3399 ;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
 dl.left,
 dl.middle,
 dl.right{
     float: left;
     width: 33%;
-}
-
-.skills {
-    padding-top: 15px;
-}
-
-#game-dev {
-    padding-bottom: 15px;
 }
 
 .skills:after {
@@ -243,28 +201,10 @@ dl.right{
 }
 
 @media print {
-    .pagebreak {
-        break-after: always;
-    }
-    
-    #header, #footer {
-        display: none;
-    }
-
-    .do-not-contact {
-        display: none;
-    }
-
-    #game-dev {
-        display: none;
-    }
-
+    #header, #footer,
+    #game-dev,
     .hide {
         display: none;
-    }
-
-    .bigger {
-        margin-top: 40px;
     }
     
     #resume {
@@ -272,23 +212,6 @@ dl.right{
         padding-left: 25px;
         padding-bottom: 25px;
         width: 100%;
-    }
-
-    h3 {
-        font-size: 21px;
-    }
-
-    p, dd, dt {
-        font-size: 12px;
-    }
-    
-    h5 {
-        padding-top:5px;
-        font-size: 18px;
-    }
-
-    h6 {
-        font-size: 15px;
     }
 
     #rheader h1 {
