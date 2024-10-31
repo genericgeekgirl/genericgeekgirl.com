@@ -1,0 +1,17 @@
+---
+---
+
+<head>
+  <title>Assorted Nonsense</title>
+</head>
+
+<body>
+  <h1>Assorted Nonsense</h1>
+  <ul>
+    {% for url in site.static_files %}
+{% if url.path contains 'assorted nonsense' %}
+    <li><a href="{{ site.baseurl | escape }}{{ url.path | escape }}">{{ url.path | replace: "/assorted nonsense/", ""}}</a> </li>
+{% endif %}
+    {% endfor %}
+  </ul>
+</body>
