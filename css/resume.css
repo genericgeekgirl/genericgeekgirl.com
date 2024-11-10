@@ -90,10 +90,6 @@ h3 {
     padding-bottom: 0;
 }    
 
-h3.no-break {
-    padding-top: 0;
-}
-
 p, dd, dt {
     font-size: 16px;
 }
@@ -203,6 +199,10 @@ dl.right{
 }
 
 @media print {
+    h3.no-break {
+        margin-bottom: 0;
+    }
+
     #header, #footer,
     #game-dev,
     .hide {
@@ -222,6 +222,10 @@ dl.right{
     
     body {
         font-size: 10px;
+    }
+
+    .dates {
+        font-style: italic;
     }
 
     p, dd, dt {
@@ -255,7 +259,15 @@ dl.right{
     }
 
     .print-heading {
-        display: inline;
+        display: block;
         margin-bottom: 18.26px;
+    }
+
+    #rheader h1 a, h2, h3,
+    #resume .fa-phone,
+    #resume .fa-envelope,
+    #resume .fa-home,
+    .highlight {
+        color: black;
     }
 }
